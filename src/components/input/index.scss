@@ -1,0 +1,29 @@
+.journey-input {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    &-control {
+        border-radius: 3px;
+        border: solid 1px #e5e5e5;
+        width: 100%;
+        padding: 20px 17px;
+        font-size: 14px;
+        height: 46px;
+        outline: none;
+    }
+
+    &-suffix {
+        position: absolute;
+        top: 0;
+        right: 12px;
+        z-index: 2;
+        color: rgba(0,0,0,0.65);
+        height: 46px;
+        line-height: 46px;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #999;
+    }
+}
