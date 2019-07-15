@@ -8,7 +8,8 @@ module.exports = {
     entry: './src/components/index.ts',
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        libraryTarget: "umd"
     },
     module: {
         rules: [
@@ -16,7 +17,7 @@ module.exports = {
             test: /\.tsx?$/,
             exclude: /node_modules/,
             use: {
-                loader: 'ts-loader'
+                loader: 'babel-loader'
             },
         },
         {
@@ -31,13 +32,7 @@ module.exports = {
                 'sass-loader'
             ]
         },
-        // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-        {
-            enforce: "pre",
-            test: /\.js$/,
-            loader: ["source-map-loader"]
-        }]
-    },
+    ]},
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

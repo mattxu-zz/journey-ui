@@ -1,2 +1,5 @@
 import './index.scss';
-export { default as Input } from './input/Input';
+import { Input } from './input/Input';
+export {
+    Input
+}

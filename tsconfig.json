@@ -1,10 +1,12 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
+        "sourceMap": true,
         "declaration": true,
-        "module": "esnext",
+        "module": "es6",
         "outDir": "dist",
-        "target": "es6",
+        "target": "esnext",
+        "noEmit": true,
         "lib": ["dom", "es2017"],
         "moduleResolution": "node",
         "esModuleInterop": true,
