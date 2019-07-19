@@ -101,5 +101,13 @@
   opacity: 1;
   content: ' '; }
 
+.journey-form-control {
+  margin-bottom: 15px; }
+  .journey-form-control-feedback {
+    font-size: 12px;
+    color: #f8664c;
+    margin-top: 5px;
+    text-align: left; }
+
 
 /*# sourceMappingURL=journey-ui.min.css.map*/

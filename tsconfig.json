@@ -6,7 +6,7 @@
         "module": "es6",
         "outDir": "dist",
         "target": "esnext",
-        "noEmit": true,
+        // "noEmit": true,
         "lib": ["dom", "es2017"],
         "moduleResolution": "node",
         "esModuleInterop": true,
